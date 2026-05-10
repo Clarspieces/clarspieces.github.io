@@ -13,7 +13,7 @@ const projects = [
     title: '3D MOCK-UPS',
     slug: '3d-mock-ups',
     color: '#5cd1ff',
-    img: 'images/placeholder.jpg',
+    img: 'images/3d-mock-ups/funny pome.png',
   },
   {
     title: 'LOGOFOLIO',
@@ -40,8 +40,8 @@ const projects = [
     img: 'images/placeholder.jpg'
   },
   {
-    title: 'ILLUSTRATION',
-    slug: 'illustration',
+    title: 'ILLUSTRATIONS',
+    slug: 'illustrations',
     color: '#c0392b',
     img: 'images/placeholder.jpg',
     wide: true 
