@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'WIDE PROJECT',
     slug: 'wide-project',
-    color: '#d4463a',
+    color: '#5cd1ff',
     img: 'images/placeholder.jpg',
     wide: true
   },
