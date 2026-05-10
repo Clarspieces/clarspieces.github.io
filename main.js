@@ -10,8 +10,8 @@ const projects = [
     wide: true
   },
   {
-    title: 'Project A',
-    slug: 'project-a',
+    title: 'Logofolio',
+    slug: 'Logofolio',
     color: '#3a6ea5',
     img: 'images/placeholder.jpg'
   },
