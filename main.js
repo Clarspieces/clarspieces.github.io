@@ -3,10 +3,10 @@
 // ── Portfolio data ──────────────────────────────────────────────
 const projects = [
   {
-    title: 'WIDE PROJECT',
+    title: 'GCASH DIE CUT BROCHURE',
     slug: 'wide-project',
     color: '#5cd1ff',
-    img: 'images/placeholder.jpg',
+    img: 'images/gcashcat.png',
     wide: true
   },
   {
