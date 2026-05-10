@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --red:    #e63027;
+  --blue: #5349e4;
   --black:  #111111;
   --white:  #f5f5f0;
   --grey:   #888;
@@ -23,7 +23,7 @@ body {
 #cursor {
   position: fixed;
   width: 12px; height: 12px;
-  background: var(--red);
+  background: var(--blue);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -53,7 +53,7 @@ nav {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 22px;
   letter-spacing: 0.06em;
-  color: var(--red);
+  color: var(--blue);
   text-decoration: none;
   line-height: 1;
 }
@@ -79,7 +79,7 @@ nav {
   position: absolute;
   bottom: 0; left: 0;
   width: 0; height: 1px;
-  background: var(--red);
+  background: var(--blue);
   transition: width 0.25s ease;
 }
 .nav-links a:hover::after,
@@ -102,7 +102,7 @@ nav {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(80px, 16vw, 200px);
   line-height: 0.9;
-  color: var(--red);
+  color: var(--blue);
   letter-spacing: -0.02em;
   text-align: center;
   animation: fadeUp 0.9s ease both;
@@ -244,7 +244,7 @@ footer {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 18px;
   letter-spacing: 0.08em;
-  color: var(--red);
+  color: var(--blue);
 }
 
 .footer-links {
@@ -260,7 +260,7 @@ footer {
   text-decoration: none;
   transition: color 0.2s ease;
 }
-.footer-links a:hover { color: var(--red); }
+.footer-links a:hover { color: var(--blue); }
 
 .footer-copy {
   font-size: 11px;

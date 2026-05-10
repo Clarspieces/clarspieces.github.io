@@ -4,44 +4,57 @@
 const projects = [
   {
     title: 'GCASH DIE CUT BROCHURE',
-    slug: 'wide-project',
+    slug: 'gcashdiecut-project',
     color: '#5cd1ff',
     img: 'images/gcashcat.png',
     wide: true
   },
   {
-    title: 'Logofolio',
-    slug: 'Logofolio',
+    title: '3D MOCK-UPS',
+    slug: '3d-mock-ups',
+    color: '#5cd1ff',
+    img: 'images/placeholder.jpg',
+  },
+  {
+    title: 'LOGOFOLIO',
+    slug: 'logofolio',
     color: '#3a6ea5',
     img: 'images/placeholder.jpg'
   },
   {
-    title: 'Wow cool project!',
-    slug: 'cool-project',
+    title: 'POSTERS & ADVERTISEMENTS',
+    slug: 'posters-&-advertisements',
     color: '#e89c3a',
-    img: 'images/placeholder.jpg'
+    img: 'images/posters-and-advertisements/skin1004.png'
   },
   {
-    title: 'Project name here',
-    slug: 'project-name-here',
+    title: 'PRODUCTION PROJECTS',
+    slug: 'production-projects',
     color: '#4a7c59',
     img: 'images/placeholder.jpg',
   },
   {
-    title: 'Project title',
-    slug: 'project-title',
+    title: 'ANIMATION PROJECTS',
+    slug: 'animation-projects',
     color: '#7c4a8a',
     img: 'images/placeholder.jpg'
   },
   {
-    title: 'AAAAAHHHHHHHHHH',
-    slug: 'aaaahhhhhh',
+    title: 'ILLUSTRATION',
+    slug: 'illustration',
     color: '#c0392b',
     img: 'images/placeholder.jpg',
-    wide: true },
+    wide: true 
+  },
   {
-    title: 'HUEHUEHUEHUEHUEHUEHUEHUE',
-    slug: 'hue-hue-hue',
+    title: 'CHARACTER STUDIES & DESIGNS ',
+    slug: 'character-studies-&-designs',
+    color: '#f39c12',
+    img: 'images/placeholder.jpg'
+  },
+  {
+    title: 'PERSONAL PROJECT',
+    slug: 'personal-project',
     color: '#f39c12',
     img: 'images/placeholder.jpg'
   },
@@ -72,8 +85,8 @@ projects.forEach(p => {
 
   var btn = document.createElement('a');
   btn.className = 'card-view-btn';
-  btn.href = 'https://clarspieces.github.io/' + p.slug + '/';
-  btn.target = '_blank';
+  btn.href = 'https://clarspieces.github.io/' + p.slug;
+  btn.target = '_self';
   btn.rel = 'noopener';
   btn.textContent = 'View';
 
