@@ -155,6 +155,6 @@ if (ctaLink) {
     ctaLink.textContent = 'Back to Portfolio →';
   } else {
     ctaLink.href = `../projects/${next.slug}.html`;
-    ctaLink.textContent = `Next: ${next.title} →`;
+    ctaLink.textContent = `${next.title} →`;
   }
 }
