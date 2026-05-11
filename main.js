@@ -19,13 +19,13 @@ const projects = [
     title: 'LOGOFOLIO',
     slug: 'logofolio',
     color: '#3a6ea5',
-    img: 'images/placeholder.jpg'
+    img: 'images/logofolio/logofolio-header-image.png'
   },
   {
     title: 'POSTERS & ADVERTISEMENTS',
     slug: 'posters-&-advertisements',
     color: '#e89c3a',
-    img: 'images/posters-and-advertisements/skin1004.png'
+    img: 'images/posters-and-advertisements/posters-and-adver-header.png'
   },
   {
     title: 'PRODUCTION PROJECTS',
@@ -34,8 +34,8 @@ const projects = [
     img: 'images/placeholder.jpg',
   },
   {
-    title: 'ANIMATION PROJECTS',
-    slug: 'animation-projects',
+    title: 'ANIMATION SHOWREEL',
+    slug: 'animation-showreel',
     color: '#7c4a8a',
     img: 'images/placeholder.jpg'
   },
