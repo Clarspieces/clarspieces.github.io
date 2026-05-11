@@ -1,6 +1,6 @@
 'use strict';
 
-// ── Portfolio data ──────────────────────────────────────────────
+// Portfolio data
 const projects = [
   {
     title: 'GCASH DIE CUT BROCHURE',
@@ -60,10 +60,13 @@ const projects = [
   },
 ];
 
-// ── Build grid ─────────────────────────────────────────────────
-var grid = document.getElementById('grid');
+// Build grid
+const grid = document.getElementById('grid');
 
 projects.forEach(p => {
+  if (!grid) {
+    break;
+  }
   const card = document.createElement('article');
   card.className = 'card' + (p.wide ? ' wide' : '');
 
@@ -96,7 +99,7 @@ projects.forEach(p => {
   grid.appendChild(card);
 });
 
-// ── Custom cursor ──────────────────────────────────────────────
+// Custom cursor
 var cursor = document.getElementById('cursor');
 
 document.addEventListener('mousemove', function(e) {
@@ -109,10 +112,32 @@ document.querySelectorAll('a, button, .card').forEach(function(el) {
   el.addEventListener('mouseleave', function() { cursor.classList.remove('hovered'); });
 });
 
-// ── Nav active link on scroll ─────────────────────────────────
+// Nav collapse on scroll
+var nav = document.querySelector('nav');
 var navLinks = document.querySelectorAll('.nav-links a');
+var lastScrollY = 0;
+var mouseInTopQuarter = false;
+var topQuarter = window.innerHeight / 4;
 
-window.addEventListener('scroll', function() {
-  navLinks.forEach(function(link) { link.classList.remove('active'); });
-  navLinks[0].classList.add('active');
+function setNavCollapsed(collapsed) {
+  nav.classList.toggle('nav--collapsed', collapsed);
+}
+
+function updateNav() {
+  var atTop = window.scrollY < 40;
+  var scrollingUp = window.scrollY < lastScrollY;
+  setNavCollapsed(!atTop && !scrollingUp && !mouseInTopQuarter);
+  lastScrollY = window.scrollY;
+}
+
+window.addEventListener('scroll', updateNav, { passive: true });
+
+window.addEventListener('resize', function() {
+  topQuarter = window.innerHeight / 4;
 }, { passive: true });
+
+document.addEventListener('mousemove', function(e) {
+  var wasInTop = mouseInTopQuarter;
+  mouseInTopQuarter = e.clientY < topQuarter;
+  if (mouseInTopQuarter !== wasInTop) updateNav();
+});
