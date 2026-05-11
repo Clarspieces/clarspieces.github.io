@@ -144,18 +144,17 @@ document.addEventListener('mousemove', function(e) {
 
 
 // Project page "next project" link
-var ctaLink = document.getElementById('next-project-link');
+const ctaLink = document.getElementById('next-project-link');
 if (ctaLink) {
   var slug = window.location.pathname.replace(/\/+$/, '').split('/').pop();
-  var idx = projects.findIndex(function(p) { return p.slug === slug; });
+  var idx = projects.findIndex(p => p.slug === slug);
   var next = idx !== -1 ? projects[(idx + 1) % projects.length] : null;
 
   if (!next || idx === -1) {
     ctaLink.href = '../index.html#portfolio';
     ctaLink.textContent = 'Back to Portfolio →';
-    return;
+  } else {
+    ctaLink.href = `../projects/${next.slug}.html`;
+    ctaLink.textContent = `Next: ${next.title} →`;
   }
-
-  ctaLink.href = `../projects/${next.slug}.html`;
-  ctaLink.textContent = `Next: ${next.title} →`;
 }
