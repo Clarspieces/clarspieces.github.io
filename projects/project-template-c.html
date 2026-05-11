@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Project Title — Clarisse Grace Rivera</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap' rel='stylesheet' />
+  <link rel='stylesheet' href='../styles.css' />
+</head>
+<body>
+
+  <div id='cursor'></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href='../index.html' class='nav-logo'>
+      CLARISSE GRACE RIVERA <span>「ｄｅｓｉｇｎｅｒ」</span>
+    </a>
+    <ul class='nav-links'>
+      <li><a href='../index.html#portfolio'>Portfolio</a></li>
+      <li><a href='../index.html#about'>About</a></li>
+      <li><a href='../index.html#contact'>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- NARROW HEADER BLOCK -->
+  <div style='max-width:760px; margin:0 auto; padding:160px 48px 80px;'>
+
+    <a href='../index.html' style='display:inline-flex; align-items:center; gap:8px;
+       font-size:11px; letter-spacing:0.22em; text-transform:uppercase;
+       text-decoration:none; color:var(--grey); margin-bottom:48px; display:block;
+       transition:color 0.2s;'
+       onmouseenter="this.style.color='var(--blue)'"
+       onmouseleave="this.style.color='var(--grey)'">
+      ← Back to Portfolio
+    </a>
+
+    <p class='about-eyebrow'>Poster &amp; Advertisement</p>
+
+    <h1 style='font-family:"Bebas Neue",sans-serif; font-size:clamp(64px,12vw,140px);
+               line-height:0.88; letter-spacing:0.01em; color:var(--black);
+               margin-bottom:48px;'>
+      Project<br>Title<br>Here
+    </h1>
+
+    <!-- Inline meta row -->
+    <div style='display:flex; gap:40px; flex-wrap:wrap; padding:28px 0;
+                border-top:1px solid #ddd; border-bottom:1px solid #ddd;
+                margin-bottom:56px;'>
+      <div>
+        <p style='font-size:10px; letter-spacing:0.24em; text-transform:uppercase;
+                  color:var(--grey); margin-bottom:4px;'>Category</p>
+        <p style='font-size:13px; font-weight:500;'>Poster Design</p>
+      </div>
+      <div>
+        <p style='font-size:10px; letter-spacing:0.24em; text-transform:uppercase;
+                  color:var(--grey); margin-bottom:4px;'>Year</p>
+        <p style='font-size:13px; font-weight:500;'>2024</p>
+      </div>
+      <div>
+        <p style='font-size:10px; letter-spacing:0.24em; text-transform:uppercase;
+                  color:var(--grey); margin-bottom:4px;'>Role</p>
+        <p style='font-size:13px; font-weight:500;'>Design, Copywriting</p>
+      </div>
+      <div>
+        <p style='font-size:10px; letter-spacing:0.24em; text-transform:uppercase;
+                  color:var(--grey); margin-bottom:4px;'>Tools</p>
+        <p style='font-size:13px; font-weight:500;'>Photoshop, Illustrator</p>
+      </div>
+    </div>
+
+    <!-- Lead paragraph -->
+    <p style='font-size:20px; line-height:1.65; color:#333; font-weight:300;'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
+  </div>
+
+  <!-- FULL-BLEED IMAGE -->
+  <div style='width:100%; height:80vh; overflow:hidden;'>
+    <img src='../images/placeholder.jpg' alt='Primary image'
+      style='width:100%; height:100%; object-fit:cover; display:block;' />
+  </div>
+
+  <!-- BODY TEXT BLOCK -->
+  <div style='max-width:760px; margin:0 auto; padding:80px 48px;'>
+    <p class='about-eyebrow'>The Brief</p>
+    <p class='about-body' style='max-width:100%; font-size:16px;'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p class='about-body' style='max-width:100%; font-size:16px;'>
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+  <!-- TWO-UP IMAGES (equal halves, no gap) -->
+  <div style='display:grid; grid-template-columns:1fr 1fr;'>
+    <div style='overflow:hidden; aspect-ratio:1/1;'>
+      <img src='../images/placeholder.jpg' alt='Detail A'
+        style='width:100%; height:100%; object-fit:cover; display:block;
+               transition:transform 0.5s ease;'
+        onmouseenter="this.style.transform='scale(1.04)'"
+        onmouseleave="this.style.transform='scale(1)'" />
+    </div>
+    <div style='overflow:hidden; aspect-ratio:1/1; background:var(--yellow);
+                display:flex; align-items:center; justify-content:center; padding:48px;'>
+      <!-- Pull quote -->
+      <blockquote style='font-family:"Bebas Neue",sans-serif;
+                         font-size:clamp(28px,4vw,52px); line-height:1.1;
+                         letter-spacing:0.03em; color:var(--black); text-align:center;'>
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod."
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- BODY TEXT BLOCK 2 -->
+  <div style='max-width:760px; margin:0 auto; padding:80px 48px;'>
+    <p class='about-eyebrow'>The Outcome</p>
+    <p class='about-body' style='max-width:100%; font-size:16px;'>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore
+      veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </p>
+    <p class='about-body' style='max-width:100%; font-size:16px;'>
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+      quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    </p>
+  </div>
+
+  <!-- SQUARE GRID GALLERY (4 col) -->
+  <div style='padding:0 48px; margin-bottom:80px;'>
+    <p class='about-eyebrow' style='margin-bottom:20px;'>Gallery</p>
+    <div class='insta-grid'>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='g1' /></div>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='g2' /></div>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='g3' /></div>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='g4' /></div>
+    </div>
+  </div>
+
+  <!-- Next project CTA -->
+  <div style='text-align:center; padding:96px 48px; border-top:1px solid #ddd; margin-top:80px;'>
+    <p class='about-eyebrow'>Next Project</p>
+    <a id='next-project-link' href='#' class='about-headline'
+      style='display:block; text-decoration:none; color:var(--black); transition:color 0.2s; margin-bottom:32px;'
+      onmouseenter="this.style.color='var(--blue)'"
+      onmouseleave="this.style.color='var(--black)'">
+    </a>
+    <a href='../index.html#portfolio' class='card-view-btn'
+      style='border-color:var(--black); color:var(--black);'>
+      Back to Portfolio
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class='footer-name'>Clarisse Grace Rivera</span>
+    <ul class='footer-links'>
+      <li><a href='https://www.facebook.com/rivera.clarisse.grace' target='_blank'>Facebook</a></li>
+      <li><a href='https://www.instagram.com/clarisseespieces/' target='_blank'>Instagram</a></li>
+      <li><a href='https://www.linkedin.com/in/clarisse-grace-rivera-73586b213' target='_blank'>LinkedIn</a></li>
+      <li><a href='mailto:rivera.clarisse.grace@gmail.com'>Email</a></li>
+    </ul>
+  </footer>
+
+  <script src='../main.js'></script>
+</body>
+</html>

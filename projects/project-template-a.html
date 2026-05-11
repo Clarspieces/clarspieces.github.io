@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Project Title — Clarisse Grace Rivera</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap' rel='stylesheet' />
+  <link rel='stylesheet' href='../styles.css' />
+</head>
+<body>
+  <div id='cursor'></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href='../index.html' class='nav-logo'>
+      CLARISSE GRACE RIVERA <span>「ｄｅｓｉｇｎｅｒ」</span>
+    </a>
+    <ul class='nav-links'>
+      <li><a href='../index.html#portfolio'>Portfolio</a></li>
+      <li><a href='../index.html#about'>About</a></li>
+      <li><a href='../index.html#contact'>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- FULL-WIDTH HERO IMAGE -->
+  <div style='width:100%; height:100svh; overflow:hidden; position:relative;'>
+    <img src='../images/placeholder.jpg' alt='Project hero'
+      style='width:100%; height:100%; object-fit:cover; display:block;' />
+    <!-- Overlay title -->
+    <div style='position:absolute; inset:0; display:flex; flex-direction:column;
+                justify-content:flex-end; padding:56px 48px;
+                background:linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);'>
+      <p class='about-eyebrow' style='color:var(--yellow);'>Branding &amp; Identity</p>
+      <h1 style='font-family:"Bebas Neue",sans-serif; font-size:clamp(52px,10vw,130px);
+                 line-height:0.95; letter-spacing:0.02em; color:var(--white);'>
+        Project<br>Title Here
+      </h1>
+    </div>
+  </div>
+
+  <!-- INTRO + META -->
+  <div style='max-width:1200px; margin:0 auto; padding:72px 48px 0;'>
+
+    <a href='../index.html' style='display:inline-flex; align-items:center; gap:8px;
+       font-size:11px; letter-spacing:0.22em; text-transform:uppercase;
+       text-decoration:none; color:var(--grey); margin-bottom:48px;
+       transition:color 0.2s;'
+       onmouseenter="this.style.color='var(--blue)'"
+       onmouseleave="this.style.color='var(--grey)'">
+      ← Back to Portfolio
+    </a>
+
+    <div class='about-meta' style='max-width:100%; border-top:none; margin-top:0; padding-top:0;'>
+      <div class='about-meta-block'>
+        <dl>
+          <dt style='font-size:10px; letter-spacing:0.26em; text-transform:uppercase; color:var(--grey); margin-bottom:4px;'>Category</dt>
+          <dd style='font-size:14px; font-weight:500;'>Branding &amp; Identity</dd>
+        </dl>
+      </div>
+      <div class='about-meta-block'>
+        <dl>
+          <dt style='font-size:10px; letter-spacing:0.26em; text-transform:uppercase; color:var(--grey); margin-bottom:4px;'>Year</dt>
+          <dd style='font-size:14px; font-weight:500;'>2024</dd>
+        </dl>
+      </div>
+      <div class='about-meta-block'>
+        <dl>
+          <dt style='font-size:10px; letter-spacing:0.26em; text-transform:uppercase; color:var(--grey); margin-bottom:4px;'>Role</dt>
+          <dd style='font-size:14px; font-weight:500;'>Art Direction, Design</dd>
+        </dl>
+      </div>
+      <div class='about-meta-block'>
+        <dl>
+          <dt style='font-size:10px; letter-spacing:0.26em; text-transform:uppercase; color:var(--grey); margin-bottom:4px;'>Tools</dt>
+          <dd style='font-size:14px; font-weight:500;'>Illustrator, Photoshop</dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- Intro text centred narrow -->
+    <div style='max-width:680px; margin:56px auto 80px; text-align:center;'>
+      <h2 class='about-headline' style='margin-bottom:24px;'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </h2>
+      <p class='about-body' style='max-width:100%;'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ALTERNATING SECTIONS -->
+
+  <!-- Section 1: image left, text right -->
+  <div class='about-banner' style='padding-top:0; border-bottom:none;'>
+    <img class='about-photo' src='../images/placeholder.jpg' alt='Section image' />
+    <div class='about-content'>
+      <p class='about-eyebrow'>The Challenge</p>
+      <h3 class='about-headline'>
+        Lorem ipsum dolor sit amet consectetur.
+      </h3>
+      <p class='about-body'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+      <p class='about-body'>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </p>
+    </div>
+  </div>
+
+  <!-- Full-width image break -->
+  <div style='width:100%; height:60vh; overflow:hidden; margin:0;'>
+    <img src='../images/placeholder.jpg' alt='Full-width detail'
+      style='width:100%; height:100%; object-fit:cover; display:block;' />
+  </div>
+
+  <!-- Section 2: text left, image right -->
+  <div class='about-banner' style='padding-top:72px; border-bottom:none;
+       grid-template-columns:1fr 360px;'>
+    <div class='about-content'>
+      <p class='about-eyebrow'>The Solution</p>
+      <h3 class='about-headline'>
+        Ut enim ad minim veniam quis nostrud.
+      </h3>
+      <p class='about-body'>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore
+        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </p>
+      <p class='about-body'>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </p>
+    </div>
+    <img class='about-photo' src='../images/placeholder.jpg' alt='Solution image' />
+  </div>
+
+  <!-- Image grid -->
+  <div style='max-width:1200px; margin:72px auto 0; padding:0 48px;'>
+    <p class='about-eyebrow' style='margin-bottom:20px;'>Project Gallery</p>
+    <div class='insta-grid'>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='Gallery 1' /></div>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='Gallery 2' /></div>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='Gallery 3' /></div>
+      <div class='insta-item'><img src='../images/placeholder.jpg' alt='Gallery 4' /></div>
+    </div>
+  </div>
+
+  <!-- Next project CTA -->
+  <div style='text-align:center; padding:96px 48px; border-top:1px solid #ddd; margin-top:80px;'>
+    <p class='about-eyebrow'>Next Project</p>
+    <a id='next-project-link' href='#' class='about-headline'
+      style='display:block; text-decoration:none; color:var(--black); transition:color 0.2s; margin-bottom:32px;'
+      onmouseenter="this.style.color='var(--blue)'"
+      onmouseleave="this.style.color='var(--black)'">
+    </a>
+    <a href='../index.html#portfolio' class='card-view-btn'
+      style='border-color:var(--black); color:var(--black);'>
+      Back to Portfolio
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class='footer-name'>Clarisse Grace Rivera</span>
+    <ul class='footer-links'>
+      <li><a href='https://www.facebook.com/rivera.clarisse.grace' target='_blank'>Facebook</a></li>
+      <li><a href='https://www.instagram.com/clarisseespieces/' target='_blank'>Instagram</a></li>
+      <li><a href='https://www.linkedin.com/in/clarisse-grace-rivera-73586b213' target='_blank'>LinkedIn</a></li>
+      <li><a href='mailto:rivera.clarisse.grace@gmail.com'>Email</a></li>
+    </ul>
+  </footer>
+
+  <script src='../main.js'></script>
+</body>
+</html>

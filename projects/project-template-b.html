@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Project Title — Clarisse Grace Rivera</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap' rel='stylesheet' />
+  <link rel='stylesheet' href='../styles.css' />
+</head>
+<body>
+
+  <div id='cursor'></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href='../index.html' class='nav-logo'>
+      CLARISSE GRACE RIVERA <span>「ｄｅｓｉｇｎｅｒ」</span>
+    </a>
+    <ul class='nav-links'>
+      <li><a href='../index.html#portfolio'>Portfolio</a></li>
+      <li><a href='../index.html#about'>About</a></li>
+      <li><a href='../index.html#contact'>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- SPLIT HERO: text left | tall image right -->
+  <div style='display:grid; grid-template-columns:1fr 1fr; min-height:100svh;'>
+
+    <!-- Left: title block -->
+    <div style='display:flex; flex-direction:column; justify-content:flex-end;
+                padding:120px 48px 64px; background:var(--yellow);'>
+      <a href='../index.html' style='display:inline-flex; align-items:center; gap:8px;
+         font-size:11px; letter-spacing:0.22em; text-transform:uppercase;
+         text-decoration:none; color:var(--black); margin-bottom:auto; padding-top:0;
+         transition:color 0.2s;'
+         onmouseenter="this.style.color='var(--blue)'"
+         onmouseleave="this.style.color='var(--black)'">
+        ← Portfolio
+      </a>
+      <div style='margin-top:auto;'>
+        <p class='about-eyebrow' style='color:var(--black); opacity:0.5;'>
+          Illustration &amp; Print
+        </p>
+        <h1 style='font-family:"Bebas Neue",sans-serif; font-size:clamp(56px,9vw,120px);
+                   line-height:0.9; letter-spacing:0.02em; color:var(--black);
+                   margin-bottom:36px;'>
+          Project<br>Title<br>Here
+        </h1>
+        <div class='about-meta' style='max-width:100%; border-top:1px solid rgba(0,0,0,0.15);
+             padding-top:28px; margin-top:0; gap:28px;'>
+          <div class='about-meta-block'>
+            <dl>
+              <dt style='font-size:10px; letter-spacing:0.24em; text-transform:uppercase;
+                         color:rgba(0,0,0,0.45); margin-bottom:4px;'>Year</dt>
+              <dd style='font-size:13px; font-weight:500;'>2024</dd>
+            </dl>
+          </div>
+          <div class='about-meta-block'>
+            <dl>
+              <dt style='font-size:10px; letter-spacing:0.24em; text-transform:uppercase;
+                         color:rgba(0,0,0,0.45); margin-bottom:4px;'>Role</dt>
+              <dd style='font-size:13px; font-weight:500;'>Illustration, Layout</dd>
+            </dl>
+          </div>
+          <div class='about-meta-block'>
+            <dl>
+              <dt style='font-size:10px; letter-spacing:0.24em; text-transform:uppercase;
+                         color:rgba(0,0,0,0.45); margin-bottom:4px;'>Tools</dt>
+              <dd style='font-size:13px; font-weight:500;'>Illustrator, InDesign</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: tall image -->
+    <div style='overflow:hidden;'>
+      <img src='../images/placeholder.jpg' alt='Hero image'
+        style='width:100%; height:100%; object-fit:cover; display:block;' />
+    </div>
+
+  </div>
+
+  <!-- OVERVIEW: wide text block -->
+  <div style='max-width:800px; margin:96px auto; padding:0 48px; text-align:center;'>
+    <p class='about-eyebrow'>Overview</p>
+    <h2 class='about-headline' style='margin-bottom:24px;'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.
+    </h2>
+    <p class='about-body' style='max-width:100%; margin:0 auto;'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+    </p>
+  </div>
+
+  <!-- THREE-COLUMN IMAGE ROW (wide + narrow + narrow) -->
+  <div style='display:grid; grid-template-columns:2fr 1fr 1fr; gap:4px;
+              padding:0; max-width:100%;'>
+    <div style='overflow:hidden; aspect-ratio:3/4;'>
+      <img src='../images/placeholder.jpg' alt='Detail 1'
+        style='width:100%; height:100%; object-fit:cover; display:block;
+               transition:transform 0.5s ease;'
+        onmouseenter="this.style.transform='scale(1.05)'"
+        onmouseleave="this.style.transform='scale(1)'" />
+    </div>
+    <div style='display:flex; flex-direction:column; gap:4px;'>
+      <div style='overflow:hidden; flex:1;'>
+        <img src='../images/placeholder.jpg' alt='Detail 2'
+          style='width:100%; height:100%; object-fit:cover; display:block;
+                 transition:transform 0.5s ease;'
+          onmouseenter="this.style.transform='scale(1.05)'"
+          onmouseleave="this.style.transform='scale(1)'" />
+      </div>
+      <div style='overflow:hidden; flex:1;'>
+        <img src='../images/placeholder.jpg' alt='Detail 3'
+          style='width:100%; height:100%; object-fit:cover; display:block;
+                 transition:transform 0.5s ease;'
+          onmouseenter="this.style.transform='scale(1.05)'"
+          onmouseleave="this.style.transform='scale(1)'" />
+      </div>
+    </div>
+    <div style='display:flex; flex-direction:column; gap:4px;'>
+      <div style='overflow:hidden; flex:1;'>
+        <img src='../images/placeholder.jpg' alt='Detail 4'
+          style='width:100%; height:100%; object-fit:cover; display:block;
+                 transition:transform 0.5s ease;'
+          onmouseenter="this.style.transform='scale(1.05)'"
+          onmouseleave="this.style.transform='scale(1)'" />
+      </div>
+      <div style='overflow:hidden; flex:1;'>
+        <img src='../images/placeholder.jpg' alt='Detail 5'
+          style='width:100%; height:100%; object-fit:cover; display:block;
+                 transition:transform 0.5s ease;'
+          onmouseenter="this.style.transform='scale(1.05)'"
+          onmouseleave="this.style.transform='scale(1)'" />
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCESS SECTION: text + small image side by side -->
+  <div class='about-banner' style='padding-top:96px; border-bottom:none;
+       grid-template-columns:1fr 280px; align-items:center;'>
+    <div class='about-content'>
+      <p class='about-eyebrow'>Process &amp; Execution</p>
+      <h3 class='about-headline'>
+        Ut enim ad minim veniam quis nostrud exercitation.
+      </h3>
+      <p class='about-body'>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore
+        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </p>
+      <p class='about-body'>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </p>
+    </div>
+    <!-- Small square image -->
+    <img src='../images/placeholder.jpg' alt='Process detail'
+      style='width:100%; aspect-ratio:1/1; object-fit:cover; display:block;' />
+  </div>
+
+  <!-- Next project CTA -->
+  <div style='text-align:center; padding:96px 48px; border-top:1px solid #ddd; margin-top:80px;'>
+    <p class='about-eyebrow'>Next Project</p>
+    <a id='next-project-link' href='#' class='about-headline'
+      style='display:block; text-decoration:none; color:var(--black); transition:color 0.2s; margin-bottom:32px;'
+      onmouseenter="this.style.color='var(--blue)'"
+      onmouseleave="this.style.color='var(--black)'">
+    </a>
+    <a href='../index.html#portfolio' class='card-view-btn'
+      style='border-color:var(--black); color:var(--black);'>
+      Back to Portfolio
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class='footer-name'>Clarisse Grace Rivera</span>
+    <ul class='footer-links'>
+      <li><a href='https://www.facebook.com/rivera.clarisse.grace' target='_blank'>Facebook</a></li>
+      <li><a href='https://www.instagram.com/clarisseespieces/' target='_blank'>Instagram</a></li>
+      <li><a href='https://www.linkedin.com/in/clarisse-grace-rivera-73586b213' target='_blank'>LinkedIn</a></li>
+      <li><a href='mailto:rivera.clarisse.grace@gmail.com'>Email</a></li>
+    </ul>
+  </footer>
+
+  <script src='../main.js'></script>
+</body>
+</html>
