@@ -65,7 +65,7 @@ const grid = document.getElementById('grid');
 
 projects.forEach(p => {
   if (!grid) {
-    break;
+    return;
   }
   const card = document.createElement('article');
   card.className = 'card' + (p.wide ? ' wide' : '');
