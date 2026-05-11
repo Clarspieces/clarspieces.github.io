@@ -3,6 +3,7 @@
 :root {
   --blue: #5349e4;
   --black:  #111111;
+  --yellow: #e0e266;
   --white:  #f5f5f0;
   --grey:   #888;
   --card-gap: 0px;
@@ -33,7 +34,7 @@ body {
 }
 #cursor.hovered {
   width: 40px; height: 40px;
-  background: var(--black);
+  background: var(--yellow);
   mix-blend-mode: normal;
 }
 
