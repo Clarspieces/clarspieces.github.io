@@ -28,8 +28,8 @@ const projects = [
     img: 'images/posters-and-advertisements/posters-and-adver-header.png'
   },
   {
-    title: 'PRODUCTION PROJECTS',
-    slug: 'production-projects',
+    title: 'VIDEO PRODUCTION & EDITING',
+    slug: 'video-production-and-editing',
     color: '#4a7c59',
     img: 'images/placeholder.jpg',
   },
@@ -53,8 +53,8 @@ const projects = [
     img: 'images/placeholder.jpg'
   },
   {
-    title: 'PERSONAL PROJECT',
-    slug: 'personal-project',
+    title: 'CONTENT CREATION',
+    slug: 'content-creation',
     color: '#f39c12',
     img: 'images/placeholder.jpg'
   },
