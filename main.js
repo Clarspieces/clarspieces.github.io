@@ -88,7 +88,7 @@ projects.forEach(p => {
 
   var btn = document.createElement('a');
   btn.className = 'card-view-btn';
-  btn.href = 'https://clarspieces.github.io/' + p.slug;
+  btn.href = 'https://clarspieces.github.io/projects/' + p.slug;
   btn.target = '_self';
   btn.rel = 'noopener';
   btn.textContent = 'View';
