@@ -89,7 +89,7 @@ projects.forEach(p => {
   var btn = document.createElement('a');
   btn.className = 'card-view-btn';
   btn.href = `./projects/${p.slug}`
-  if (document.URL.endsWith('.html')) {
+  if (document.URL.includes('.html')) {
     btn.href += '.html'
   }
   btn.target = '_self';
@@ -149,9 +149,12 @@ document.addEventListener('mousemove', function(e) {
 // Project page "next project" link
 const ctaLink = document.getElementById('next-project-link');
 if (ctaLink) {
-  var slug = window.location.pathname.replace(/\/+$/, '').split('/').pop();
-  var idx = projects.findIndex(p => p.slug === slug);
-  var next = idx !== -1 ? projects[(idx + 1) % projects.length] : null;
+  let slug = window.location.pathname.replace(/\/+$/, '').split('/').pop();
+  if (slug.endsWith('.html')) {
+    slug = slug.substring(0, slug.length - 5);
+  }
+  let idx = projects.findIndex(p => p.slug === slug);
+  let next = idx !== -1 ? projects[(idx + 1) % projects.length] : null;
 
   if (!next || idx === -1) {
     ctaLink.href = '../index.html#portfolio';
