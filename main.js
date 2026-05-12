@@ -50,7 +50,7 @@ const projects = [
     title: 'CHARACTER STUDIES & DESIGNS ',
     slug: 'character-studies-&-designs',
     color: '#f39c12',
-    img: 'images/placeholder.jpg'
+    img: 'images/character-studies-and-designs/davinci-design.png'
   },
   {
     title: 'CONTENT CREATION',
